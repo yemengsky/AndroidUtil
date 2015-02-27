@@ -1,2 +1,3 @@
 # AndroidUtil
-Coustom Android Util
+Elog      : coustom log
+SpUtil    : Easy util of using SharedPreferences 
