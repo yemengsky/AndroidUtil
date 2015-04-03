@@ -2,7 +2,7 @@ import android.util.Log;
 
 public class ELog {
 	// when online set this value to false
-	public static boolean debugeMode = true;
+	public static boolean debugeMode = BuildConfig.DEBUG;
 	// you can set this TAG
 	// notice that if you change it , all log will change to the tag you seted
 	public static String TAG = "MYLOG";
