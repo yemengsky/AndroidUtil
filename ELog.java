@@ -10,13 +10,13 @@ public class ELog {
 	private ELog() {
 	}
 
-	private static String getString(Object object) {
-		StackTraceElement ste = new Throwable().getStackTrace()[2];
-		String valueString = ste.getFileName().split("\\.")[0] + "  "
-				+ ste.getMethodName() + ":" + ste.getLineNumber() + "\n"
-				+ object.toString();
-		return valueString;
-	}
+ private static String getString(Object object) {
+        StackTraceElement ste = new Throwable().getStackTrace()[2];
+        String valueString = ste.getFileName() + " "
+                + ste.getMethodName() + ":" + ste.getLineNumber() + " "
+                + ((object == null) ? "NULL" : object.toString());
+        return valueString;
+    }
 
 	public static void e(Object object) {
 		if (debugeMode) {
