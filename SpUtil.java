@@ -54,4 +54,9 @@ public class SpUtil {
 	public static boolean getBooleanSharedPerference(String key, boolean value) {
 		return sp.getBoolean(key, value);
 	}
+	public static void clearAll(){
+        	SharedPreferences.Editor editor = sp.edit();
+        	editor.clear();
+		editor.commit();
+    }
 }
