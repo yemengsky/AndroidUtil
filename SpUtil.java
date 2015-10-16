@@ -9,7 +9,7 @@ import android.content.SharedPreferences.Editor;
  * 
  */
 public class SpUtil {
-	private static final String NAME = "APPName";
+	private static final String NAME = BuildConfig.APPLICATION_ID;
 	private static SharedPreferences sp = MyApplication.application
 			.getSharedPreferences(NAME, Context.MODE_PRIVATE);
 
